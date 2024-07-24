@@ -1,0 +1,95 @@
+.calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 370px;
+    border: 1px solid #95aeff;
+    border-radius: 17px;
+    background: #95aeff;
+    color: #4960ad;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px #727272;
+}
+
+.calc-screen {
+    height: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background: #d5dfff;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 37px;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+        "c c equals equals"
+        "seven eight nine plus"
+        "four five six minus"
+        "one two three division"
+        "dot zero zero multiply";
+    grid-gap: 7px;
+}
+
+.btn {
+    width: 70px;
+    height: 50px;
+    background: #fff5bf;
+    color: #d6ae2c;
+    border-radius: 7%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 4px 4px 4px #5d75c4;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.btn.c {
+    grid-area: c;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.btn.equals {
+    grid-area: equals;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    filter: brightness(110%)
+}
+
+.btn:active {
+    filter: brightness(90%)
+}
+
+.btn.bg-pink1 {
+    background: #ffbbeb;
+    color: #ffffff;
+}
+
+.btn.bg-green {
+    background: #9DEBD1;
+    color: #ffffff;
+}
+
+.btn.bg-pink {
+    background: #f196d7;
+    color: #ffffff;
+}
